@@ -1,0 +1,20 @@
+{
+  "short_name": "CV-19 tracker",
+  "name": "Covid tracker",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "theme_color": "#27e16a",
+  "background_color": "#27e16a",
+  "display": "standalone"
+}
