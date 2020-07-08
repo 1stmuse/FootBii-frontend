@@ -1,0 +1,38 @@
+@mixin flex ($d, $j, $a, $w) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+    width: $w;
+}
+
+.drawer-main{
+    max-width: 250px;
+    margin-top: 40px;
+    // border: 1px solid red;
+    .drawer-tab{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        @include flex(flex, center,center, 200px );
+        min-height: 70px;
+        border-radius: 10px;
+        box-shadow:2px 1px 5px grey;
+        &:hover{
+            background: $blue;
+            fill: $white;
+            border-radius: 10px;
+        }
+        svg{
+            width: 100%;
+            height: 50px;
+        }
+    }
+    .home-tab{
+        @include flex(flex, space-around,center, 200px);
+        color: $white;
+        font-family: $font;
+        svg{
+            width:auto;
+            height: 50px;
+        }
+    }
+}

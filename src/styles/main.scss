@@ -1,0 +1,12 @@
+@import "variables";
+@import "_regLog";
+@import "utils";
+@import "footer";
+@import "header";
+@import "drawer";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }

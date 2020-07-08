@@ -11,6 +11,8 @@ const FormField = ({formData, change, id}) => {
             formTemplate = (
                 <div>
                     <input
+                    className='form-input'
+                    style={{padding:'10px'}}
                         {...formData.config}
                         value={formData.value}
                         onBlur={(event)=>change({event, id, blur:true})}

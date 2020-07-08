@@ -3,12 +3,27 @@ import React, { Component } from 'react';
 import FormField from '../../utils/Forms/formField'
 import Button from '../../utils/button'
 
-class login extends Component {
+class Register extends Component {
 
     state={
         formError:false,
         formSuccess:'',
         formData:{
+            name:{
+                element:'input',
+                value:'',
+                config:{
+                    name:'name_input',
+                    type:'name',
+                    placeholder: 'Your name'
+                },
+                validation:{
+                    required:true,
+                },
+                valid:false,
+                touched:false,
+                validationMessage:''
+            },
             email:{
                 element:'input',
                 value:'',
@@ -20,7 +35,22 @@ class login extends Component {
                 validation:{
                     required:true,
                     email:true
+                }, 
+                valid:false,
+                touched:false,
+                validationMessage:''
+            },
+            phone:{
+                element:'input',
+                value:'',
+                config:{
+                    name:'phone_input',
+                    type:'number',
+                    placeholder: 'Phone number'
                 },
+                validation:{
+                    required:true,
+                }, 
                 valid:false,
                 touched:false,
                 validationMessage:''
@@ -49,20 +79,30 @@ class login extends Component {
 
     render() {
         return (
-            <div className='login-card' >
+            <div className='register-card' >
                 <div>
                     {/* <img/> */}
-                    <h2>Welcome back</h2>
-                    <p>Sign in your account to continue</p>
-                    <h3>Enter login details</h3>
+                    <h2>Welcome </h2>
+                    <p>Sign up to continue</p>
+                    <h3>Enter details</h3>
                 </div>
                 <form onSubmit={(event)=>this.submitForm(event)} >
                     <FormField
-                        id={'email'}
+                        id={'name'}
                         formData={this.state.formData.email}
                         change={(element)=>this.updateForm(element)}
                     />
 
+                    <FormField
+                        id={'email'}
+                        formData={this.state.formData.password}
+                        change={(element)=>this.updateForm(element)}
+                    />
+                    <FormField
+                        id={'phone'}
+                        formData={this.state.formData.password}
+                        change={(element)=>this.updateForm(element)}
+                    />
                     <FormField
                         id={'password'}
                         formData={this.state.formData.password}
@@ -74,7 +114,7 @@ class login extends Component {
                         pad = '5px 10px'
                         width = '50%'
                         display = 'block'
-                        text ='login ->'
+                        text ='Register ->'
                     />
                 </form>
             </div>
@@ -82,4 +122,4 @@ class login extends Component {
     }
 }
 
-export default login;
+export default Register;
