@@ -5,11 +5,15 @@ const Button = (props) => {
     let styles ={
         backgroundColor: props.bck,
         color: props.color,
-        padding:props.pad
+        padding:props.pad,
+        width:props.width,
+        margin:props.margin,
+        cursor:props.cursor,
+        boxShadow:props.shadow
     }
     return (
         <div style={styles} className='btn' >
-            {props.text}
+            {props.children}
         </div>
     );
 };

@@ -74,8 +74,10 @@ class login extends Component {
                         pad = '5px 10px'
                         width = '50%'
                         display = 'block'
-                        text ='login ->'
-                    />
+                        margin='20px auto'
+                    >
+                        {`login ->`}
+                    </Button>
                 </form>
             </div>
         );

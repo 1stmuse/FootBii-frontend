@@ -1,9 +1,4 @@
 import React, {useState} from 'react';
-import icon from '../../assets/homee.svg'
-import nike from '../../assets/nike.svg'
-import puma from '../../assets/puma.svg'
-import addias from '../../assets/addias.svg'
-import converse from '../../assets/converse.svg'
 
 const Drawer = () => {
 

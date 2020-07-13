@@ -114,8 +114,10 @@ class Register extends Component {
                         pad = '5px 10px'
                         width = '50%'
                         display = 'block'
-                        text ='Register ->'
-                    />
+                        margin='20px auto'
+                    >
+                        <p>Register -> </p>
+                    </Button>
                 </form>
             </div>
         );
