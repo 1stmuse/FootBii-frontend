@@ -7,7 +7,7 @@ const HomeProducts = () => {
     return (
         <div className='home-prod-main'>
             <div className='home-prod-hero'>
-                <img src={hero} width='100%' height='200px'/>
+                <img src={hero} width='100%' />
             </div>
             <div className='dics'>
                 <h2>Discover</h2>
@@ -71,6 +71,17 @@ const HomeProducts = () => {
                 <Shoes/>
                 <Shoes/>
                 <Shoes/>
+            </div>
+            <div className='hm-prod-footer'>
+                <div className='hm-prev-nxt'>
+                    <div><i class="fa fa-angle-left" aria-hidden="true"></i><p>Prev</p> </div>
+                    <div><p>Prev</p><i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                </div>
+                <div className='hm-footer-social'>
+                    <i className='fa fa-twitter fa-2x'></i>
+                    <i className='fa fa-instagram fa-2x'></i>
+                    <i className='fa fa-linkedin fa-2x'></i>
+                </div>
             </div>
         </div>
     );
