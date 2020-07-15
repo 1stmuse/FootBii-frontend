@@ -7,8 +7,9 @@ const Drawer = () => {
     return (
         <div className='drawer-main'>
             <div 
+                onClick={()=>setBg(!bg)}
                 className='drawer-tab home-tab'
-                style={{background:bg? '#0b228a':null}}
+                style={{background:bg? '#0b228a':null, color:!bg && 'black'}}
             >
                 <h2>Home</h2>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">

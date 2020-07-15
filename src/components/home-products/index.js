@@ -1,14 +1,13 @@
 import React from 'react';
-import hero from '../../assets/IMG-20200702-WA0013.jpg'
-import Shoes from '../Shoes'
+import hero from '../../assets/nikee.jpg'
+import Shoes from '../../utils/Shoes'
 import Button from '../../utils/button'
+import Hero from '../../utils/Hero'
 
 const HomeProducts = () => {
     return (
         <div className='home-prod-main'>
-            <div className='home-prod-hero'>
-                <img src={hero} width='100%' />
-            </div>
+            <Hero img={hero} />
             <div className='dics'>
                 <h2>Discover</h2>
                 <h2>New</h2>
@@ -16,8 +15,8 @@ const HomeProducts = () => {
             </div>
             <div className='filt-btn'>
                 <Button
-                    width='80px'
-                    margin='0px 10px 0px 0px'
+                    width='130px'
+                    margin='0px 20px 0px 0px'
                     bck='white'
                     cursor='pointer'
                     color='black'  
@@ -26,18 +25,8 @@ const HomeProducts = () => {
                     <div className='filt-btn-flex'><p>Filter</p> <i>iii</i></div>
                 </Button>
                 <Button
-                    width='120px'
-                    margin='0px 10px 0px 0px'
-                    bck='white'
-                    cursor='pointer'
-                    color='black' 
-                    shadow='1px 3px 5px gray'
-                >
-                    <div className='filt-btn-flex'><p>Product type</p><i>ii</i> </div>
-                </Button>
-                <Button
-                    width='100px'
-                    margin='0px 10px 0px 0px'
+                    width='130px'
+                    margin='0px 20px 0px 0px'
                     bck='white'
                     cursor='pointer'
                     color='black'   
@@ -47,8 +36,8 @@ const HomeProducts = () => {
                 </Button>
                 <Button
                 className='try'
-                    width='100px'
-                    margin='0px 10px 0px 0px'
+                    width='130px'
+                    margin='0px 20px 0px 0px'
                     bck='white'
                     cursor='pointer'
                     color='black'  
@@ -57,8 +46,19 @@ const HomeProducts = () => {
                     <div className='filt-btn-flex'><p>Color</p> <i>iii</i></div>
                 </Button>
                 <Button
-                    width='100px'
-                    margin='0px 10px 0px 0px'
+                    className='try'
+                    width='130px'
+                    margin='0px 20px 0px 0px'
+                    bck='white'
+                    cursor='pointer'
+                    color='black'  
+                    shadow='1px 3px 5px gray'  
+                >
+                    <div className='filt-btn-flex'><p>Price Range</p> <i>iii</i></div>
+                </Button>
+                <Button
+                    width='130px'
+                    margin='0px 20px 0px 0px'
                     bck='white'
                     cursor='pointer'
                     color='black'

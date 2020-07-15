@@ -18,6 +18,7 @@
         box-shadow:2px 1px 5px grey;
         &:hover{
             background: $blue;
+            color: $white !important;
             fill: $white;
             border-radius: 10px;
         }

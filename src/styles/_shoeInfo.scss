@@ -1,0 +1,91 @@
+@mixin display ($d,$j, $a) {
+    display: $d;
+    justify-content: $j;
+    align-items: $a;
+}
+@mixin whbg ($w, $h, $bg) {
+    width: $w;
+    height: $h;
+    background-color: $bg;
+}
+
+.shoe_info_wrapper{
+    @include whbg(80%,auto ,transparent );
+    padding-top: 20px;
+        .shoe_flex_wrapper{
+            @include display(flex, space-between,none );
+                .shoe_info{
+                    @include whbg(25%,auto ,#3d8af5 );
+                    border-radius: 10px;
+                        .back{
+                            margin-left: 20px;
+                            margin-top: 10px;
+                            font-weight: bold;
+                            width: 60px;
+                            color: $white;
+                            @include display(flex, space-between,center );
+                        }
+                        .shoe_img{
+                            @include whbg(100%,300px ,transparent );
+                                img{
+                                    @include whbg(300px,150px ,transparent );
+                                    position: relative;
+                                    top: 20%;
+                                    left: 10%;
+                                    transform: rotate(-43deg);
+                                }
+                        }
+                        .shoe_details{
+                            width: 80%;
+                            margin: 10px auto;
+                            color: $white;
+                                h3{
+                                    margin-top: 20px;
+                                }
+                                .show_number{
+                                    width: 100px;
+                                    margin-top: 20px;
+                                    @include display(flex, space-between,none );
+                                        div{
+                                            @include display(flex, center,center );
+                                            @include whbg(25px,25px,#447ecf );
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            box-shadow: 1px 1px 5px #47484a;
+                                        }
+                                        div:nth-child(2){
+                                            background: transparent;
+                                            box-shadow: none;
+                                            cursor: initial;
+                                        }
+                                }
+                                .add_to_cart{
+                                    margin-top: 20px;
+                                    margin-bottom: 100px;
+                                    @include display(flex, space-between,center );
+                                        div{
+                                            height: 40px;
+                                            cursor: pointer;
+                                            box-shadow: 1px 1px 5px #47484a;
+                                            background-color: #447ecf;
+                                        }
+                                        div:first-child{
+                                            @include display(flex, center,center );
+                                            width: 40px;
+                                            border-radius: 100%;
+                                        }
+                                        div:last-child{
+                                            width: 140px;
+                                            padding: 0 15px;
+                                            border-radius: 10px;
+                                            font-weight: bold;
+                                            @include display(flex, space-between,center );
+                                        }
+                                }
+                        }
+                }
+                .show_extras{
+                    width: 65%;
+                }
+        }
+}
