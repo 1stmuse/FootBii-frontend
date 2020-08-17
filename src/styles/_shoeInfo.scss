@@ -86,6 +86,67 @@
                 }
                 .show_extras{
                     width: 65%;
+                    border: 1px solid green;
+                    .show-x-top{
+                        .x-photos{
+                           h2{
+                            margin-bottom: 5px;
+                            font-size: 1.2rem;
+                            }
+                            margin-bottom: 20px;
+                            .x-photo-flex{
+                                border: 1px solid $blue;
+                                display: flex;
+                                height: 150px;
+                                & div img{
+                                    margin-right: 30px;
+                                    border-radius: 20px;
+                                    @include whbg(150px, 120px, none);
+                                }
+                            }
+                        }
+                        .x-colors{
+                            margin-bottom: 30px;
+                            h2{
+                                margin-bottom: 5px;
+                                font-size: 1.2rem;
+                            }
+                            .x-colors-flex{
+                                display: flex;
+                                div{
+                                    margin-right: 15px;
+                                    @include display(flex, center, center);
+                                    @include whbg(30px, 30px, none);
+                                    border: .5px solid red;
+                                    border-radius: 50%;
+                                    p{
+                                        @include whbg(70%, 70%, none);
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                        }
+                        .x-sizes{
+                            margin-bottom: 30px;
+                            h2{font-size: 1.2rem; margin-bottom: 5px;}
+                            .x-sizes-flex{
+                                display: flex;
+                                div{
+                                    @include whbg(40px, 30px, white);
+                                    @include display(flex, center, center);
+                                    border-radius: 5px;
+                                    font-weight: bold;
+                                    cursor: pointer;
+                                    margin-right: 10px;
+                                    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+                                    &:hover{
+                                        color: white;
+                                        background-color: $blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
         }
 }

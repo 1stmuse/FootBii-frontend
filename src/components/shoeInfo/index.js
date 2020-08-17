@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import nike from '../../assets/sampNike.jpg'
+import extra1 from '../../assets/extra1.jpg'
+import extra2 from '../../assets/extra2.jpg'
 
 class index extends Component {
     render() {
@@ -38,28 +40,34 @@ class index extends Component {
                 </div>
               </div>
               <div className="show_extras">
-                <div>
-                  <div>
+                <div className='show-x-top'>
+                  <div className='x-photos'>
                     <h2>Photos</h2>
-                    <div>
+                    <div className='x-photo-flex'>
                       <div>
-                        <img alt="extra shoes" />
+                        <img alt="extra shoes" src={extra2} />
                       </div>
                       <div>
-                        <img alt="extra shoes" />
+                        <img alt="extra shoes" src={extra1} />
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div className='x-colors'>
                     <h2>Colors</h2>
-                    <div>yeklow</div>
+                    <div className='x-colors-flex'>
+                      <div><p style={{backgroundColor:'yellow'}}></p></div>
+                      <div ><p style={{backgroundColor:'blue'}}></p></div>
+                      <div> <p style={{backgroundColor:'red'}} ></p></div>
+                    </div>
                   </div>
-                  <div>
+                  <div className='x-sizes'>
                     <h2>Sizes</h2>
-                    <div>sm</div>
-                    <div>md</div>
-                    <div>lg</div>
-                    <div>xl</div>
+                    <div className='x-sizes-flex'>
+                      <div>sm</div>
+                      <div>md</div>
+                      <div>lg</div>
+                      <div>xl</div>
+                    </div>
                   </div>
                 </div>
                 <div>
