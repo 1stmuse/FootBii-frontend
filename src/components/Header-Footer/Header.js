@@ -18,11 +18,11 @@ const Header = () => {
                 </div>
                 <div className='header-icons'>
                     <div className='like-div same-icon'>
-                        <i class="fa fa-heart-o fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
                         <p>0</p>
                     </div>
                     <div className='cart-div same-icon'>
-                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         <p>0</p>
                     </div>
                     <div className='profile-div'>

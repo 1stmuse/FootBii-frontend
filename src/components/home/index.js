@@ -7,7 +7,7 @@ import ShoeInfo from '../shoeInfo'
 class Home extends Component {
     render() {
         return (
-            <div style={{minHeight:'650px', border:'1px solid red'}}>
+            <div style={{minHeight:'650px', border:'1px solid red'}} className='view'>
                 <Header/>
                 <div style={{display:'flex', justifyContent:'space-between'}} >
                     <Drawer/>

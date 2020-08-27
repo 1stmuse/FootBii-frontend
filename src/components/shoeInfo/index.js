@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import nike from '../../assets/sampNike.jpg'
 import extra1 from '../../assets/extra1.jpg'
 import extra2 from '../../assets/extra2.jpg'
+import other from '../../assets/other.jpg'
 
 class index extends Component {
     render() {
@@ -73,33 +74,33 @@ class index extends Component {
                 <div>
                   <div>
                     <h2>Similar Products</h2>
-                    <div>
-                      <div>1</div>
-                      <div>2</div>
-                      <div>3</div>
+                    <div className='simi-sh'>
+                      <div><img src={other}/> </div>
+                      <div><img src={other}/> </div>
+                      <div><img src={other}/> </div>
                     </div>
                   </div>
                 </div>
                 <div>
                     <div className="">
-                        <div className="hm-prev-nxt">
-                            <div>
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                <p>Prev</p>
-                            </div>
-                            <div>
-                                <p>Prev</p>
-                                <i
-                                    class="fa fa-angle-right"
-                                    aria-hidden="true"
-                                ></i>{" "}
-                            </div>
+                      <div className="hm-prev-nxt">
+                        <div>
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            <p>Prev</p>
                         </div>
-                        <div className="">
-                            <i className="fa fa-twitter fa-2x"></i>
-                            <i className="fa fa-instagram fa-2x"></i>
-                            <i className="fa fa-linkedin fa-2x"></i>
+                        <div>
+                            <p>Prev</p>
+                            <i
+                                class="fa fa-angle-right"
+                                aria-hidden="true"
+                            ></i>{" "}
                         </div>
+                      </div>
+                      <div className="hm-footer-social">
+                          <i className="fa fa-twitter"></i>
+                          <i className="fa fa-instagram "></i>
+                          <i className="fa fa-linkedin f"></i>
+                      </div>
                     </div>
                 </div>
               </div>
