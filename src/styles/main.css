@@ -300,6 +300,7 @@ form {
 
 .home-prod-main {
   margin-top: 30px;
+  max-width: 1000px;
 }
 
 .home-prod-main .dics {
@@ -336,6 +337,14 @@ form {
 .home-prod-main .filt-btn .filt-btn-flex:hover {
   background-color: black;
   color: white;
+}
+
+.paginated-shoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  overflow: hidden;
 }
 
 .try:hover {

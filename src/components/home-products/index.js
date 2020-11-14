@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import {CSSTransition} from 'react-transition-group'
+
+
+import Button from '../../utils/button'
 import hero from '../../assets/nikee.jpg'
 import Shoes from '../../utils/Shoes'
-import Button from '../../utils/button'
+import shoeData from '../../data'
 import Hero from '../../utils/Hero'
 
 const HomeProducts = () => {
+    const [shoeInfo, setShoeInfo] = useState(false)
     return (
         <div className='home-prod-main'>
             <Hero img={hero} />
@@ -67,10 +72,10 @@ const HomeProducts = () => {
                     <div className='filt-btn-flex'><p>Sort</p> <i>iii</i></div>
                 </Button>
             </div>
-            <div style={{display:'flex'}} >
-                <Shoes/>
-                <Shoes/>
-                <Shoes/>
+            <div className='paginated-shoes' >
+                {shoeData.map(shoe=>(
+                    <Shoes shoe={shoe} />
+                ))}
             </div>
             <div className='hm-prod-footer'>
                 <div className='hm-prev-nxt'>
@@ -83,6 +88,7 @@ const HomeProducts = () => {
                     <i className='fa fa-linkedin fa-2x'></i>
                 </div>
             </div>
+            <ShoeInfo/>
         </div>
     );
 };

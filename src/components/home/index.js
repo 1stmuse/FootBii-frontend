@@ -11,8 +11,10 @@ class Home extends Component {
                 <Header/>
                 <div style={{display:'flex', justifyContent:'space-between'}} >
                     <Drawer/>
-                    {/* <HomeProducts/> */}
-                    <ShoeInfo/>
+                    {/* <div> */}
+                        <HomeProducts/>
+                        {/* <ShoeInfo/> */}
+                    {/* </div> */}
                 </div>
             </div>
         );
