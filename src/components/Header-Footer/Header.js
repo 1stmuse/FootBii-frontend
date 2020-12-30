@@ -9,7 +9,7 @@ const Header = () => {
                     <h1>Foot<span>Bill</span></h1>
                 </div>
                 <div className='header-search-div'>
-                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <i className="fa fa-search" aria-hidden="true"></i>
                     <input 
                         type='text' 
                         className='header-search' 
@@ -18,15 +18,15 @@ const Header = () => {
                 </div>
                 <div className='header-icons'>
                     <div className='like-div same-icon'>
-                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        <i className="fa fa-heart-o" aria-hidden="true"></i>
                         <p>0</p>
                     </div>
                     <div className='cart-div same-icon'>
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                         <p>0</p>
                     </div>
                     <div className='profile-div'>
-                        <img src={git} />
+                        <img src={git} alt=''/>
                     </div>
                 </div>
             </header>

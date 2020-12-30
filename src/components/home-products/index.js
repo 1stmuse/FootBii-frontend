@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import {CSSTransition} from 'react-transition-group'
+import React, {  } from 'react';
 
 
 import Button from '../../utils/button'
@@ -9,7 +8,7 @@ import shoeData from '../../data'
 import Hero from '../../utils/Hero'
 
 const HomeProducts = () => {
-    const [shoeInfo, setShoeInfo] = useState(false)
+
     return (
         <div className='home-prod-main'>
             <Hero img={hero} />
@@ -74,13 +73,13 @@ const HomeProducts = () => {
             </div>
             <div className='paginated-shoes' >
                 {shoeData.map(shoe=>(
-                    <Shoes shoe={shoe} />
+                    <Shoes shoe={shoe} key={shoe.id} />
                 ))}
             </div>
             <div className='hm-prod-footer'>
                 <div className='hm-prev-nxt'>
-                    <div><i class="fa fa-angle-left" aria-hidden="true"></i><p>Prev</p> </div>
-                    <div><p>Prev</p><i class="fa fa-angle-right" aria-hidden="true"></i> </div>
+                    <div><i className="fa fa-angle-left" aria-hidden="true"></i><p>Prev</p> </div>
+                    <div><p>Prev</p><i className="fa fa-angle-right" aria-hidden="true"></i> </div>
                 </div>
                 <div className='hm-footer-social'>
                     <i className='fa fa-twitter fa-2x'></i>
@@ -88,7 +87,6 @@ const HomeProducts = () => {
                     <i className='fa fa-linkedin fa-2x'></i>
                 </div>
             </div>
-            <ShoeInfo/>
         </div>
     );
 };
