@@ -13,7 +13,7 @@
     @include whbg(80%,auto ,transparent );
     padding-top: 20px;
         .shoe_flex_wrapper{
-            @include display(flex, space-between,none );
+            @include display(flex, space-around ,none );
                 .shoe_info{
                     @include whbg(30%,auto ,#3d8af5 );
                     border-radius: 10px;

@@ -8,7 +8,7 @@ const HomeLayout =({children}) =>{
   return (
     <div style={{minHeight:'650px', border:'1px solid red'}} className='view' >
         <Header/>
-        <div style={{display:'flex', justifyContent:'space-between'}}>
+        <div style={{display:'flex', justifyContent:'space-around'}}>
             <Drawer/>
             {children}
         </div>
